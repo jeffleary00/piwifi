@@ -5,7 +5,7 @@ Python module to manage wpa_supplicant wifi networks on Raspberry Pi
 sudo pip3 install piwifi
 
 # usage
-
+```
   from piwifi import Scanner, WpaManager
 
   s = Scanner(sudo=True)
@@ -16,6 +16,7 @@ sudo pip3 install piwifi
   m.list_networks()
   m.add_network( { 'ssid': 'Some Wifi', 'scan_ssid': 1, 'psk'='wpa2password'} )
   m.delete_network(3)
+```
 
 # todo
 Tests needed, of course. And some better exception and error handling too. Make a pull request if you would like to contribute! Thanks!
