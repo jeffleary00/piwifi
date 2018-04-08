@@ -14,7 +14,7 @@ sudo pip3 install piwifi
 
   m = WpaManager(sudo=True)
   m.list_networks()
-  m.add_network( { 'ssid': 'Some Wifi', 'scan_ssid': 1, 'psk'='wpa2password'} )
+  m.add_network( { 'ssid': 'Some Wifi', 'scan_ssid': 1, 'psk': 'wpa2password'} )
   m.delete_network(3)
 ```
 
