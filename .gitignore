@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# mac junk
+.DS_Store
+
