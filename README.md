@@ -2,7 +2,9 @@
 Python module to manage wpa_supplicant wifi networks on Raspberry Pi
 
 # installation
+```
 sudo pip3 install piwifi
+```
 
 # usage
 ```
@@ -23,7 +25,8 @@ sudo pip3 install piwifi
 Tests needed, of course. And some better exception and error handling too. Make a pull request if you would like to contribute! Thanks!
 
 # caveats
-The wpa_supplicant python looks far more complete. However, I could not get it to work, even with the most basic examples and tests. So, I abandoned it and wrote this module to quickly and easily meet my needs.
+The wpa_supplicant python looks far more complete, and you should probably be using that module instead. 
+However, I could not get it to work, even with the most basic examples and tests. So, I abandoned it and wrote this module to quickly and easily meet my needs.
 
 This module's classes are simply wrappers around the wpi_cli, wpa_passphrase, and iwlist commands. A bit crude, but it allows a non-root user (with appropriate sudo permissions) to manage the wifi networks.
 
