@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
   name = 'piwifi',
   packages = ['piwifi'],
-  version = '0.1',
+  version = '0.2',
   description = 'Manage wpa_supplicant wifi networks on Raspberry Pi',
   author = 'Jeff Leary',
   author_email = 'sillymonkeysoftware@gmail.com',
