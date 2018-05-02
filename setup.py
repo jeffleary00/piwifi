@@ -9,4 +9,6 @@ setup(
   author_email = 'sillymonkeysoftware@gmail.com',
   url = 'https://github.com/jeffleary00/piwifi',
   download_url = 'https://github.com/jeffleary00/piwifi/tarball/0.1',
+  classifiers = [],
+  keywords = ['wpa_supplicant', 'raspberry pi', 'linux'], 
 )

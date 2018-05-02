@@ -126,6 +126,10 @@ class Scanner(PiCommander):
     Identify which wifi channel in the area is the 'cleanest' or least crowded.
     This is useful if you want to create an ad-hoc access-point.
     
+    params:
+        none
+    returns:
+        a channel number (int)
     """
     def quietest_channel(self):
         chan = 1
@@ -155,6 +159,27 @@ class Scanner(PiCommander):
                 lowest = v
                 
         return chan
+
+
+    """
+    Identify which wifi channel in the area is the 'strongest' signal.
+    
+    params:
+        none
+    returns:
+        a channel number (int)
+    """
+    def strongest_channel(self):
+        chan = 1
+        strongest = -180
+        
+        for c in self.cells:
+            if int(c['signal_level_dBm']) > strongest:
+                chan = int(c['channel'])
+                strongest = int(c['signal_level_dBm'])
+                        
+        return chan
+
 
 
 """
